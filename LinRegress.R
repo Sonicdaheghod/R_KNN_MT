@@ -1,4 +1,4 @@
-#Code source reference: https://www.youtube.com/watch?v=5bA0m1OowdU&list=PLXCw5VdOQb7iN847MZzb2uvDALI3U5z05&index=1&ab_channel=Gronify
+#Code source reference: https://youtu.be/5bA0m1OowdU?feature=shared&t=1085
 #Gronify - Linear Regression Machine Learning Model in R | Practical Implementation of Linear regression model
 
 #1- load dataset
@@ -40,7 +40,20 @@ str(the_train)
 the_test = subset(longley, mySample==FALSE)
 str(the_test)
 
+## number of items for test and train
+dim(the_train)
+dim(the_test)
+
 ## the model will use the train  dataset ( GNP.deflator     GNP Unemployed Armed.Forces Population Year)
 ## to predict number of people employed
 
 ##4- Model Creation
+
+### lm is function for linear regression
+
+##a) train model with training dataset
+myTrainModel = lm(Employed~GNP.deflator+Unemployed+Armed.Forces+Population,data=the_train)
+summary(myTrainModel)
+
+##b) Model prediction
+
