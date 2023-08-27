@@ -1,3 +1,7 @@
+#improvements: better visualize dataset
+# model validation
+
+
 #Code source reference: https://youtu.be/5bA0m1OowdU?feature=shared&t=1085
 #Gronify - Linear Regression Machine Learning Model in R | Practical Implementation of Linear regression model
 
@@ -56,4 +60,17 @@ myTrainModel = lm(Employed~GNP.deflator+Unemployed+Armed.Forces+Population,data=
 summary(myTrainModel)
 
 ##b) Model prediction
+my_prediction = predict(myTrainModel, the_test)
+summary(my_prediction)
+View(my_prediction)
 
+##5- Peformance of Model
+#https://machinelearningmastery.com/regression-metrics-for-machine-learning/
+
+###a) Prediction vs Actual
+compare_df = data.frame(cbind(Actual = the_test$Employed, Predicted = my_prediction))
+View(compare_df)
+
+###b) Root Mean Squared Error
+
+###c) Mean absolute error
