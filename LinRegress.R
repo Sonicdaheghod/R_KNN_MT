@@ -2,7 +2,7 @@
 # model validation
 
 
-#Code source reference: https://youtu.be/5bA0m1OowdU?feature=shared&t=1085
+#Code source reference: https://youtu.be/5bA0m1OowdU?feature=shared
 #Gronify - Linear Regression Machine Learning Model in R | Practical Implementation of Linear regression model
 
 #1- load dataset
@@ -72,5 +72,19 @@ compare_df = data.frame(cbind(Actual = the_test$Employed, Predicted = my_predict
 View(compare_df)
 
 ###b) Root Mean Squared Error
+## this measures the error between predicted and actual values
+
+##viewing all avaliable packages with "metrics"
+available_packages <- available.packages()
+metrics_packages <- grep("metrics", available_packages[, "Package"], value = TRUE)
+print(metrics_packages)
+
+##install MLmetrics to R
+install.packages("MLmetrics")
+library(MLmetrics)
+
+##running RMSE
+rmse_value <- RMSE(the_test$Employed, my_prediction)
+print(rmse_value)
 
 ###c) Mean absolute error
