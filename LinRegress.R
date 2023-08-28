@@ -88,3 +88,4 @@ rmse_value <- RMSE(the_test$Employed, my_prediction)
 print(rmse_value)
 
 ###c) Mean absolute error
+mae_value <- mean(abs(the_test$Employed - my_prediction), na.rm = TRUE)
