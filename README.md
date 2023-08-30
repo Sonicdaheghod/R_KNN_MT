@@ -51,6 +51,11 @@ data(longley)
 
 ## Improvements
 
+* In additon to comparing the predicted value with the actual values for the number of people employed I used:
+  - Different method to calculate Root Mean Squared Error
+  - Mean absolute error
+
+These further analyze the accuracy and quality of the output from the model. 
 
 ## Acknowledgements
 * Tutorial by [Gronify](https://youtu.be/5bA0m1OowdU?feature=shared)
