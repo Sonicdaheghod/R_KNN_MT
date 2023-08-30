@@ -52,10 +52,16 @@ data(longley)
 ## Improvements
 
 * In additon to comparing the predicted value with the actual values for the number of people employed I used:
+  
   - Different method to calculate Root Mean Squared Error
   - Mean absolute error
 
 These further analyze the accuracy and quality of the output from the model. 
+
+![image](https://github.com/Sonicdaheghod/R_LinearRegress_MT/assets/68253811/da541f99-5fde-454e-aca6-4ef02b47e938)
+
+Predicted vs Actual Values
+
 
 ## Acknowledgements
 * Tutorial by [Gronify](https://youtu.be/5bA0m1OowdU?feature=shared)
