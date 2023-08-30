@@ -92,8 +92,10 @@ data(longley)
 * In additon to comparing the predicted value with the actual values for the number of people employed I used:
   
   - Different method to calculate Root Mean Squared Error
+    
     Measures the standard deviation of the distances between the regression line and the predicted values.
   - Mean absolute error
+    
     Measures the average absolute difference of the distance between the predicted and actual values.
 
 These further analyze the accuracy and quality of the output from the model. 
