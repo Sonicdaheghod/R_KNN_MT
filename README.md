@@ -70,6 +70,17 @@ data(longley)
 
 2) Prepare dataset for Regression Model
 
+* Linear regression is a supervised model, so dataset was split into training and test dataset.
+  - More datapoints for training so model can make accurate predictions
+
+```
+> ## number of items for test and train
+> dim(the_train)
+[1] 10  7
+> dim(the_test)
+[1] 6 7
+```
+
 3) Model Creation
 
 4) Model Execution
