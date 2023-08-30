@@ -41,6 +41,33 @@ data(longley)
 
 1) Analyzing Dataset
 
+* See dimensions of dataset
+```
+> dim(longley)
+[1] 16  7
+```
+
+
+* See Statistical Description of data (Min and max values, 1st and 3rd Quartile, median)
+
+```
+> summary(longley)
+  GNP.deflator         GNP          Unemployed     Armed.Forces  
+ Min.   : 83.00   Min.   :234.3   Min.   :187.0   Min.   :145.6  
+ 1st Qu.: 94.53   1st Qu.:317.9   1st Qu.:234.8   1st Qu.:229.8  
+ Median :100.60   Median :381.4   Median :314.4   Median :271.8  
+ Mean   :101.68   Mean   :387.7   Mean   :319.3   Mean   :260.7  
+ 3rd Qu.:111.25   3rd Qu.:454.1   3rd Qu.:384.2   3rd Qu.:306.1  
+ Max.   :116.90   Max.   :554.9   Max.   :480.6   Max.   :359.4  
+   Population         Year         Employed    
+ Min.   :107.6   Min.   :1947   Min.   :60.17  
+ 1st Qu.:111.8   1st Qu.:1951   1st Qu.:62.71  
+ Median :116.8   Median :1954   Median :65.50  
+ Mean   :117.4   Mean   :1954   Mean   :65.32  
+ 3rd Qu.:122.3   3rd Qu.:1958   3rd Qu.:68.29  
+ Max.   :130.1   Max.   :1962   Max.   :70.55  
+```
+
 2) Prepare dataset for Regression Model
 
 3) Model Creation
