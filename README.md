@@ -83,10 +83,35 @@ data(longley)
 
 3) Model Creation
 
-4) Model Execution
+* Train our model with the training dataset where it uses the variables ``` GNP.deflator+Unemployed+Armed.Forces+Population ``` to predict the number of people employed.
+* Later test our model with test data
 
-5) Model Validation
+```
+myTrainModel = lm(Employed~GNP.deflator+Unemployed+Armed.Forces+Population,data=the_train)
+summary(myTrainModel)
 
+##b) Model prediction
+my_prediction = predict(myTrainModel, the_test)
+summary(my_prediction)
+View(my_prediction)
+```
+
+4) Model Validation
+
+* Compared Predicted vs Actual Values
+* Calculated Root Mean Squared Error (RMSE)
+
+```
+> rmse_value <- RMSE(the_test$Employed, my_prediction)
+> print(rmse_value)
+[1] 0.9130343
+```
+* Calculated Mean absolute error (MAE)
+```
+> mae_value <- mean(abs(the_test$Employed - my_prediction), na.rm = TRUE)
+> print(mae_value)
+[1] 0.7982896
+```
 ## Improvements
 
 * In additon to comparing the predicted value with the actual values for the number of people employed I used:
@@ -99,6 +124,8 @@ data(longley)
     Measures the average absolute difference of the distance between the predicted and actual values.
 
 These further analyze the accuracy and quality of the output from the model. 
+
+Future directions include determining how to reduce the values for both RMSE and MAE since a high value means the model is not performing well.
 
 ![image](https://github.com/Sonicdaheghod/R_LinearRegress_MT/assets/68253811/da541f99-5fde-454e-aca6-4ef02b47e938)
 
