@@ -21,10 +21,33 @@ Languages/ Technologies used:
 ## Setup
 Download the necessary libraries:
 
+```
+install.packages("caTools")
+install.packages("MLmetrics")
+```
+Load the libraries in R terminal using:
+
+```
+library()
+```
+
+
 Import the dataset:
 
+```
+data(longley)
+```
 ## Using the Program
 
+1) Analyzing Dataset
+
+2) Prepare dataset for Regression Model
+
+3) Model Creation
+
+4) Model Execution
+
+5) Model Validation
 
 ## Improvements
 
